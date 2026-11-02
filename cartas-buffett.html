@@ -16,8 +16,6 @@
     <!-- Hoja de Estilos Externa -->
     <link rel="stylesheet" href="styles.css">
 
-
-    <!-- Estilo específico para garantizar la forma de cápsula/pills -->
     <style>
         .year-pill {
             display: inline-flex;
@@ -27,7 +25,6 @@
             background-color: #2b394e;
             color: #ffffff;
             border-radius: 9999px;
-            /* Da la forma totalmente redondeada tipo pill */
             text-decoration: none;
             font-family: 'Inter', sans-serif;
             font-size: 0.95rem;
@@ -43,7 +40,6 @@
 
         .year-pill.active {
             background-color: #3b82f6;
-            /* Azul destacado para el año activo */
             color: #ffffff;
             font-weight: 600;
         }
@@ -75,58 +71,107 @@
             <div class="news-header">
                 <div class="section-title-group">
                     <h2>Shareholder Letters</h2>
-                    <p>Annual letters from Warren E. Buffett to the shareholders of Berkshire Hathaway Inc., spanning
-                        from 1977 to the present.</p>
+                    <p>
+                        Annual letters from Warren E. Buffett to the shareholders of Berkshire Hathaway Inc.,
+                        spanning from 1977 to the present.
+                    </p>
                 </div>
             </div>
 
-            <!-- Cuadro Principal: Selector/Navegador de Cartas por Año -->
+            <!-- Cuadro Principal: Selector de Cartas por Año -->
             <section class="main-grid">
 
                 <article class="card highlight-card">
+
                     <div class="card-content">
                         <h3 class="card-title">Select Letter Year</h3>
-                        <p class="card-description">Click on any year below to read or download the corresponding annual
-                            letter to shareholders.</p>
+                        <p class="card-description">
+                            Click on any year below to read or download the corresponding annual letter to shareholders.
+                        </p>
                     </div>
 
-                    <!-- Selector en estilo Pills Adaptable -->
+                    <!-- Selector de años -->
                     <div class="year-selector-container"
                         style="margin-top: 1.5rem; display: flex; justify-content: center; width: 100%;">
+
                         <div class="year-pills"
                             style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.6rem; width: 100%;">
+
                             <!-- Década 2020 -->
-                            <a href="letters/2024ltr.pdf" class="year-pill" target="_blank">2024</a>
-                            <a href="letters/2023ltr.pdf" class="year-pill" target="_blank">2023</a>
-                            <a href="letters/2022ltr.pdf" class="year-pill" target="_blank">2022</a>
-                            <a href="letters/2021ltr.pdf" class="year-pill" target="_blank">2021</a>
-                            <a href="letters/2020ltr.pdf" class="year-pill" target="_blank">2020</a>
+                            <a href="https://berkshirehathaway.com/letters/2024ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2024</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2023ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2023</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2022ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2022</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2021ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2021</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2020ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2020</a>
 
                             <!-- Década 2010 -->
-                            <a href="letters/2019ltr.pdf" class="year-pill" target="_blank">2019</a>
-                            <a href="letters/2018ltr.pdf" class="year-pill" target="_blank">2018</a>
-                            <a href="letters/2017ltr.pdf" class="year-pill" target="_blank">2017</a>
-                            <a href="letters/2016ltr.pdf" class="year-pill" target="_blank">2016</a>
-                            <a href="letters/2015ltr.pdf" class="year-pill" target="_blank">2015</a>
-                            <a href="letters/2014ltr.pdf" class="year-pill" target="_blank">2014</a>
-                            <a href="letters/2013ltr.pdf" class="year-pill" target="_blank">2013</a>
-                            <a href="letters/2012ltr.pdf" class="year-pill" target="_blank">2012</a>
-                            <a href="letters/2011ltr.pdf" class="year-pill" target="_blank">2011</a>
-                            <a href="letters/2010ltr.pdf" class="year-pill" target="_blank">2010</a>
+                            <a href="https://berkshirehathaway.com/letters/2019ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2019</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2018ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2018</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2017ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2017</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2016ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2016</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2015ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2015</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2014ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2014</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2013ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2013</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2012ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2012</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2011ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2011</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2010ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2010</a>
 
                             <!-- Década 2000 -->
-                            <a href="letters/2009ltr.pdf" class="year-pill" target="_blank">2009</a>
-                            <a href="letters/2008ltr.pdf" class="year-pill" target="_blank">2008</a>
-                            <a href="letters/2007ltr.pdf" class="year-pill" target="_blank">2007</a>
-                            <a href="letters/2006ltr.pdf" class="year-pill" target="_blank">2006</a>
-                            <a href="letters/2005ltr.pdf" class="year-pill" target="_blank">2005</a>
-                            <a href="letters/2004ltr.pdf" class="year-pill" target="_blank">2004</a>
+                            <a href="https://berkshirehathaway.com/letters/2009ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2009</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2008ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2008</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2007ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2007</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2006ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2006</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2005ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2005</a>
+
+                            <a href="https://berkshirehathaway.com/letters/2004ltr.pdf" class="year-pill"
+                                target="_blank" rel="noopener noreferrer">2004</a>
+
+                            <!-- Los siguientes años conservan sus enlaces originales -->
                             <a href="letters/2003ltr.pdf" class="year-pill" target="_blank">2003</a>
+
                             <a href="letters/2002ltr.pdf" class="year-pill" target="_blank">2002</a>
+
                             <a href="letters/2001ltr.pdf" class="year-pill" target="_blank">2001</a>
-                            <a href="letters/2000html.html" class="year-pill">2000</a>
 
                             <!-- Década 1990 -->
+                            <a href="letters/2000html.html" class="year-pill">2000</a>
                             <a href="letters/1999html.html" class="year-pill">1999</a>
                             <a href="letters/1998html.html" class="year-pill">1998</a>
                             <a href="letters/1997html.html" class="year-pill">1997</a>
@@ -154,33 +199,47 @@
                             <a href="letters/1979html.html" class="year-pill">1979</a>
                             <a href="letters/1978html.html" class="year-pill">1978</a>
                             <a href="letters/1977html.html" class="year-pill">1977</a>
+
                         </div>
                     </div>
+
                 </article>
 
-                <!-- Cuadro 2: Publicación del libro compilatorio -->
+                <!-- Cuadro 2: Libro compilatorio -->
                 <article class="card" style="margin-top: 30px;">
+
                     <div class="card-content">
                         <h3 class="card-title">Warren Buffett's Letters (1965–2024)</h3>
-                        <p class="card-description">For shareholders and interested readers, a book compiling the full
-                            unedited versions of each of Warren Buffett's letters to shareholders between 1965 and 2024
-                            is available for purchase.</p>
+
+                        <p class="card-description">
+                            For shareholders and interested readers, a book compiling the full unedited versions
+                            of each of Warren Buffett's letters to shareholders between 1965 and 2024 is available
+                            for purchase.
+                        </p>
                     </div>
+
                     <div class="card-action">
                         <span class="file-type">External Link</span>
+
                         <a href="https://www.amazon.com/dp/0578799017" class="card-button" target="_blank"
-                            rel="noopener noreferrer">Buy Book Online →</a>
+                            rel="noopener noreferrer">
+                            Buy Book Online →
+                        </a>
                     </div>
+
                 </article>
 
-                <!-- Cuadro 3: Aviso de Derechos de Autor -->
+                <!-- Cuadro 3: Derechos de autor -->
                 <article class="card">
-                    <div class="card-content">
 
+                    <div class="card-content">
                         <h3 class="card-title" style="margin-top: 30px;">Permissions & Usage</h3>
-                        <p class="card-description">ALL SHAREHOLDER LETTERS INCLUDE COPYRIGHTED MATERIAL REPRODUCED WITH
-                            PERMISSION.</p>
+
+                        <p class="card-description">
+                            ALL SHAREHOLDER LETTERS INCLUDE COPYRIGHTED MATERIAL REPRODUCED WITH PERMISSION.
+                        </p>
                     </div>
+
                 </article>
 
             </section>
@@ -191,9 +250,11 @@
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-note">
-                    <p>If you have any comments about our WEB page, you can write us at the address shown above.
+                    <p>
+                        If you have any comments about our WEB page, you can write us at the address shown above.
                         However, due to the limited number of personnel in our corporate office, we are unable to
-                        provide a direct response.</p>
+                        provide a direct response.
+                    </p>
                 </div>
             </div>
         </footer>
