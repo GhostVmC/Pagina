@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg Abel's Letters to Berkshire Shareholders | Berkshire Hathaway Inc.</title>
+
+    <!-- Tipografías de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Estilo específico para garantizar la forma de cápsula/pills -->
+    <style>
+        .year-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1.25rem;
+            background-color: #2b394e;
+            color: #ffffff;
+            border-radius: 9999px;
+            /* Da la forma totalmente redondeada tipo pill */
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .year-pill:hover {
+            background-color: #3b82f6;
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .year-pill.active {
+            background-color: #3b82f6;
+            /* Azul destacado para el año activo */
+            color: #ffffff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Encabezado Principal -->
+        <header class="header">
+            <div class="header-container">
+                <div class="brand">
+                    <h1>BERKSHIRE HATHAWAY INC.</h1>
+                    <p class="location">3555 Farnam Street • Omaha, NE 68131</p>
+                </div>
+
+                <div class="header-nav">
+                    <a href="index.html" class="nav-back">← Back to Main Page</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenedor Principal -->
+        <main class="main-container">
+
+            <!-- Encabezado de la Sección -->
+            <div class="news-header">
+                <div class="section-title-group">
+                    <h2>Greg Abel's Letters to Shareholders</h2>
+                    <p>Annual reports, operational overviews, and strategic messages written by Chief Executive Officer
+                        Greg Abel to the shareholders of Berkshire Hathaway Inc.</p>
+                </div>
+            </div>
+
+            <!-- Rejilla de Cuadros -->
+            <section class="main-grid">
+
+                <!-- Cuadro Principal: Selector por Año -->
+                <article class="card highlight-card">
+                    <div class="card-content">
+                        <h3 class="card-title">Select Letter Year</h3>
+                        <p class="card-description">Access the archive of annual letters authored by Greg Abel. Select a
+                            year below to view or download the complete report in PDF format.</p>
+                    </div>
+
+                    <!-- Selector: únicamente el año 2025 centrado -->
+                    <div class="year-selector-container"
+                        style="margin-top: 1.5rem; display: flex; justify-content: center; width: 100%;">
+
+                        <div class="year-pills" style="display: flex; justify-content: center; width: 100%;">
+
+                            <a href="letters/abel2025.pdf" class="year-pill" target="_blank" rel="noopener noreferrer"
+                                style="margin: 0 auto;">
+                                2025
+                            </a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cuadro 2: Detalle de la Carta 2025 -->
+                <article class="card">
+                    <div class="card-content" style="margin-top: 30px;">
+                        <h3 class="card-title">2025 Annual Letter to Shareholders</h3>
+                        <p class="card-description">In this inaugural annual message, CEO Greg Abel reviews Berkshire
+                            Hathaway’s operating business performance, capital allocation strategy, enterprise risk
+                            management, and long-term corporate governance principles.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <span class="file-type">PDF Document</span>
+                        <a href="letters/abel2025.pdf" class="card-button" target="_blank"
+                            rel="noopener noreferrer">View Letter →</a>
+                    </div>
+                </article>
+
+                <!-- Cuadro 3: Información General -->
+                <article class="card" style="margin-top: 30px;">
+                    <div class="card-content">
+                        <h3 class="card-title">About the Shareholders Archive</h3>
+                        <p class="card-description">Berkshire Hathaway maintains a longstanding tradition of providing
+                            candid, comprehensive annual summaries directly from chief executive leadership to keep
+                            long-term owners fully informed about business operations.</p>
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+
+        <!-- Pie de Página -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-note">
+                    <p>If you have any comments about our WEB page, you can write us at the address shown above.
+                        However, due to the limited number of personnel in our corporate office, we are unable to
+                        provide a direct response.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

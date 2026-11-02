@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkshire Hathaway Inc. | Official Home Page</title>
+
+    <!-- Tipografías de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Encabezado Principal -->
+        <header class="header">
+            <div class="header-container">
+                <div class="brand">
+                    <h1>BERKSHIRE HATHAWAY INC.</h1>
+                    <p class="location">3555 Farnam Street • Omaha, NE 68131</p>
+                </div>
+
+                <!-- Buscador integrado en el Header -->
+                <div class="header-search">
+                    🔍 <input type="text" id="searchInput" placeholder="Search filings, letters, or news..."
+                        autocomplete="off">
+                </div>
+            </div>
+        </header>
+
+        <!-- Panel Principal -->
+        <main class="main-container">
+
+            <!-- Alertas Prioritarias Cliqueables -->
+            <section class="alerts-section">
+
+                <!-- Alerta de Fraude -->
+                <a href="fraude.html" class="alert-card warning">
+                    <div class="alert-header">
+                        <div class="alert-title-group">
+                            ⚠️ <h3>Fraudulent Claims Notice</h3>
+                        </div>
+                        <div class="badge badge-warning">Critical</div>
+                    </div>
+                    <p class="alert-desc">Important statement regarding unauthorized and fraudulent claims of Mr.
+                        Buffett's endorsements of investment products and political candidates.</p>
+                    <div class="alert-link">Read Statement →</div>
+                </a>
+
+                <!-- Mensaje de Buffett -->
+                <a href="mensaje.html" class="alert-card info">
+                    <div class="alert-header">
+                        <div class="alert-title-group">
+                            ✉️ <h3>A Message from Warren E. Buffett</h3>
+                        </div>
+                        <div class="badge badge-info">Featured</div>
+                    </div>
+                    <p class="alert-desc">Direct communications and official message regarding Berkshire Hathaway's core
+                        principles and investor relations.</p>
+                    <div class="alert-link">Read Message →</div>
+                </a>
+
+            </section>
+
+            <!-- Grilla de Tarjetas Categorizadas -->
+            <div class="cards-grid">
+
+                <!-- Categoría 1: Finanzas y SEC -->
+                <div class="category-card">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            📊 <h2>Financials & SEC Filings</h2>
+                        </div>
+                        <div class="item-count">3 links</div>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-item" data-search="annual interim reports financial 10-q 10-k august 2026">
+                            <a href="reports.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Annual & Interim Reports</div>
+                                    <div class="link-meta">Updated Aug 8, 2026</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                        <li class="link-item" data-search="sec filings edgar database direct">
+                            <a href="https://www.sec.gov/cgi-bin/browse-edgar?company=berkshire+hathaway&match=&CIK=&filenum=&State=&Country=&SIC=&owner=exclude&Find=Find+Companies&action=getcompany"
+                                class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Link to SEC Filings</div>
+                                    <div class="link-meta">EDGAR Database Direct</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                        <li class="link-item" data-search="common stock information class a class b shares">
+                            <a href="acciones.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Common Stock Information</div>
+                                    <div class="link-meta">Class A & Class B Shares</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categoría 2: Cartas a Accionistas -->
+                <div class="category-card">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            📄 <h2>Shareholder Letters</h2>
+                        </div>
+                        <div class="item-count">4 links</div>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-item" data-search="warren buffett letters shareholders annual february 2025">
+                            <a href="cartas-buffett.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Warren Buffett's Letters to Shareholders</div>
+                                    <div class="link-meta">Updated Feb 22, 2025</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                        <li class="link-item" data-search="greg abel letters shareholders february 2026">
+                            <a href="cartas-abel.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Greg Abel's Letters to Shareholders</div>
+                                    <div class="link-meta">Updated Feb 28, 2026</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                        <li class="link-item" data-search="special letters past present future warren charlie munger">
+                            <a href="cartas-especiales.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Special Letters RE: Past, Present and Future</div>
+                                    <div class="link-meta">By Warren & Charlie</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                        <li class="link-item" data-search="charlie munger letters wesco shareholders archive">
+                            <a href="cartas-munger.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Charlie Munger's Letters to Wesco Shareholders</div>
+                                    <div class="link-meta">Archive Collection</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categoría 3: Noticias y Reuniones -->
+                <div class="category-card">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            📰 <h2>News & Annual Meetings</h2>
+                        </div>
+                        <div class="item-count">2 links</div>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-item" data-search="news releases berkshire warren buffett september 2026">
+                            <a href="noticias.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">News Releases from Berkshire & Warren Buffett</div>
+                                    <div class="link-meta">Updated Sep 18, 2026</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                        <li class="link-item" data-search="annual meeting information april 2026 shareholder omaha">
+                            <a href="reunión-anual.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Annual Meeting Information</div>
+                                    <div class="link-meta">Updated Apr 20, 2026</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categoría 4: Empresas Subsidiarias y Gobernanza -->
+                <div class="category-card">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            🏢 <h2>Governance & Subsidiaries</h2>
+                        </div>
+                        <div class="item-count">4 links</div>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-item" data-search="links berkshire operating companies subsidiary directory">
+                            <a href="subsidiarias.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Links to Berkshire Operating Companies</div>
+                                    <div class="link-meta">Subsidiary Directory</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                        <li class="link-item" data-search="berkshire hathaway energy investor presentations bhe">
+                            <a href="energia.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Berkshire Hathaway Energy Investor Presentations</div>
+                                    <div class="link-meta">BHE Presentations</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                        <li class="link-item" data-search="corporate governance policies board guidelines">
+                            <a href="gobernanza.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Corporate Governance</div>
+                                    <div class="link-meta">Policies & Board Guidelines</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                        <li class="link-item" data-search="sustainability esg environmental reports">
+                            <a href="sostenibilidad.html" class="item-block">
+                                <div class="item-content">
+                                    <div class="link-title">Sustainability</div>
+                                    <div class="link-meta">ESG & Environmental Reports</div>
+                                </div>
+                                ↗
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Pie de Página y Módulo de GEICO -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="geico-card">
+                    <div class="geico-badge">Berkshire Subsidiary</div>
+                    <div class="geico-content">
+                        <h4 class="geico-title">GEICO Auto Insurance</h4>
+                        <p class="geico-desc">Get a free car insurance rate quote that could save you substantial money.
+                        </p>
+                    </div>
+                    <div class="geico-actions">
+                        <a href="geico-info.html" class="btn-geico">Visit GEICO.com ↗</a>
+                        <div class="geico-phone">📞 1-888-395-6349 (24 Hours)</div>
+                    </div>
+                </div>
+
+                <div class="footer-note">
+                    <p>If you have any comments about our WEB page, you can write us at the address shown above.
+                        However, due to the limited number of personnel in our corporate office, we are unable to
+                        provide a direct response.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

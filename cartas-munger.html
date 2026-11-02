@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesco Financial Letters to Shareholders | Berkshire Hathaway Inc.</title>
+
+    <!-- Tipografías de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Hoja de Estilos Externa Principal -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Estilo específico para garantizar la forma de cápsula/pills -->
+    <style>
+        .year-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1.25rem;
+            background-color: #2b394e;
+            color: #ffffff;
+            border-radius: 9999px;
+            /* Da la forma totalmente redondeada tipo pill */
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .year-pill:hover {
+            background-color: #3b82f6;
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .year-pill.active {
+            background-color: #3b82f6;
+            /* Azul destacado para el año activo */
+            color: #ffffff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Encabezado Principal -->
+        <header class="header">
+            <div class="header-container">
+                <div class="brand">
+                    <h1>BERKSHIRE HATHAWAY INC.</h1>
+                    <p class="location">3555 Farnam Street • Omaha, NE 68131</p>
+                </div>
+
+                <div class="header-nav">
+                    <a href="index.html" class="nav-back">← Back to Main Page</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenedor Principal -->
+        <main class="main-container">
+
+            <!-- Encabezado de la Sección -->
+            <div class="news-header">
+                <div class="section-title-group">
+                    <h2>WESCO FINANCIAL CORPORATION</h2>
+                    <p>Letters to Shareholders from Charles T. Munger, Chairman, appearing in annual reports for the
+                        years 1997 through 2009.</p>
+                </div>
+            </div>
+
+            <!-- Rejilla de Cuadros (Mismo estilo que index.html) -->
+            <section class="main-grid">
+
+                <!-- Cuadro Principal: Selector de Años Centrado -->
+                <article class="card highlight-card">
+                    <div class="card-content">
+                        <h3 class="card-title">Select Letter Year</h3>
+                        <p class="card-description">Click on any year below to read or download the corresponding annual
+                            letter to Wesco Financial shareholders written by Charlie Munger.</p>
+                    </div>
+
+                    <!-- Navegador de Años en Estilo Pills Totalmente Centrado -->
+                    <div class="year-selector-container"
+                        style="margin-top: 1.5rem; display: flex; justify-content: center; width: 100%;">
+                        <div class="year-pills"
+                            style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.5rem; width: 100%;">
+                            <a href="wesco/2009wesco.pdf" class="year-pill" target="_blank">2009</a>
+                            <a href="wesco/2008wesco.pdf" class="year-pill" target="_blank">2008</a>
+                            <a href="wesco/2007wesco.pdf" class="year-pill" target="_blank">2007</a>
+                            <a href="wesco/2006wesco.pdf" class="year-pill" target="_blank">2006</a>
+                            <a href="wesco/2005wesco.pdf" class="year-pill" target="_blank">2005</a>
+                            <a href="wesco/2004wesco.pdf" class="year-pill" target="_blank">2004</a>
+                            <a href="wesco/2003wesco.pdf" class="year-pill" target="_blank">2003</a>
+                            <a href="wesco/2002wesco.pdf" class="year-pill" target="_blank">2002</a>
+                            <a href="wesco/2001wesco.pdf" class="year-pill" target="_blank">2001</a>
+                            <a href="wesco/2000wesco.pdf" class="year-pill" target="_blank">2000</a>
+                            <a href="wesco/1999wesco.pdf" class="year-pill" target="_blank">1999</a>
+                            <a href="wesco/1998wesco.pdf" class="year-pill" target="_blank">1998</a>
+                            <a href="wesco/1997wesco.pdf" class="year-pill" target="_blank">1997</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cuadro 2: Contexto Histórico sobre Wesco Financial -->
+                <article class="card" style="margin-top: 30px;">
+                    <div class="card-content">
+
+                        <h3 class="card-title">About Wesco Financial Corporation</h3>
+                        <p class="card-description">Wesco Financial Corporation was an 80%-owned subsidiary of Berkshire
+                            Hathaway, chaired by Charles T. Munger. These annual letters provide unique insights into
+                            business management, multi-disciplinary thinking, and capital allocation.</p>
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+
+        <!-- Pie de Página -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-note">
+                    <p>If you have any comments about our WEB page, you can write us at the address shown above.
+                        However, due to the limited number of personnel in our corporate office, we are unable to
+                        provide a direct response.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

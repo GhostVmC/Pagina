@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Annual & Interim Reports | Berkshire Hathaway Inc.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .year-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1.25rem;
+            background-color: #2b394e;
+            color: #ffffff;
+            border: none;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .year-pill:hover {
+            background-color: #3b82f6;
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .year-pill:focus-visible {
+            outline: 2px solid #60a5fa;
+            outline-offset: 3px;
+        }
+
+        .report-modal-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(4px);
+        }
+
+        .report-modal-overlay[hidden] {
+            display: none !important;
+        }
+
+        .report-modal {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-sizing: border-box;
+            padding: 30px;
+            padding-top: 55px;
+            background: var(--card-bg, #1f2937);
+            color: var(--text-color, #f9fafb);
+            border: 1px solid var(--border-color, #374151);
+            border-radius: 14px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+            animation: modalAppear 0.2s ease-out;
+        }
+
+        .report-modal-close {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 8px;
+            background: transparent;
+            color: inherit;
+            font-size: 30px;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .report-modal-close:hover {
+            background: rgba(128, 128, 128, 0.2);
+        }
+
+        .report-modal-title {
+            margin: 0 40px 20px 0;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--border-color, #374151);
+            font-size: 22px;
+        }
+
+        .report-modal-body {
+            font-size: 15px;
+            line-height: 1.7;
+            overflow-wrap: anywhere;
+        }
+
+        .report-modal-body a {
+            color: var(--link-color, #60a5fa);
+            text-decoration: underline;
+        }
+
+        .report-modal-body li {
+            margin-bottom: 10px;
+        }
+
+        .report-modal-body h3 {
+            margin-top: 0;
+        }
+
+        @keyframes modalAppear {
+            from {
+                opacity: 0;
+                transform: translateY(10px) scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .report-modal-overlay {
+                padding: 12px;
+            }
+
+            .report-modal {
+                max-height: 85vh;
+                padding: 22px;
+                padding-top: 52px;
+            }
+
+            .report-modal-title {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- ENCABEZADO -->
+        <header class="header">
+            <div class="header-container">
+
+                <div class="brand">
+                    <h1>BERKSHIRE HATHAWAY INC.</h1>
+                    <p class="location">3555 Farnam Street • Omaha, NE 68131</p>
+                </div>
+
+                <div class="header-nav">
+                    <a href="index.html" class="nav-back">← Back to Main Page</a>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-container">
+
+            <!-- ANUNCIO -->
+            <section class="promo-banner">
+                <div class="promo-content">
+                    <h3>Berkshire Hathaway Direct Business Insurance</h3>
+                    <p>Re-engineering small business insurance with simple, direct coverage.</p>
+                </div>
+
+                <a href="insurance-info.html" class="promo-link">Learn More →</a>
+            </section>
+
+            <!-- TÍTULO -->
+            <div class="section-title-group">
+                <h2>Annual & Interim Reports Archive</h2>
+                <p>
+                    Access quarterly (10-Q) and annual (10-K) financial
+                    reports by year (1995 – Present).
+                </p>
+            </div>
+
+            <!-- REPORTES: LOS BOTONES SE GENERAN AUTOMÁTICAMENTE -->
+            <div class="reports-grid" id="reports-grid"></div>
+
+        </main>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-note">
+                    <p>
+                        If you have any comments about our WEB page, you can
+                        write us at the address shown above. However, due to
+                        the limited number of personnel in our corporate office,
+                        we are unable to provide a direct response.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- VENTANA MODAL -->
+    <div class="report-modal-overlay" id="report-modal-overlay" hidden>
+
+        <section class="report-modal" role="dialog" aria-modal="true" aria-labelledby="report-modal-title">
+
+            <button type="button" class="report-modal-close" id="report-modal-close" aria-label="Close window">
+                &times;
+            </button>
+
+            <h2 class="report-modal-title" id="report-modal-title"></h2>
+
+            <div class="report-modal-body" id="report-modal-body"></div>
+
+        </section>
+
+    </div>
+
+    <script>
+        /*
+        ============================================================
+        CONTENIDO PERSONALIZADO DE CADA BOTÓN
+        ============================================================
+
+        
+        */
+
+        const REPORT_CONTENT = {};
+
+        /*
+        ============================================================
+        REPORTES TRIMESTRALES Y ANUALES
+        DESDE 2026 HASTA 1995
+        ============================================================
+        */
+
+        for (let year = 2026; year >= 1995; year--) {
+
+            const shortYear = String(year).slice(-2);
+
+            /*
+            ------------------------------------------------------------
+            PRIMER TRIMESTRE
+            ------------------------------------------------------------
+            */
+
+            if (year >= 1996) {
+
+                REPORT_CONTENT[`${year}-q1`] = `
+            <h3>First Quarter ${year}</h3>
+
+            <ul>
+                <li>
+                    <a href="https://berkshirehathaway.com/qtrly/1stqtr${shortYear}.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        ${year} First Quarter Report (PDF file)
+                    </a>
+                </li>
+            </ul>
+        `;
+
+            }
+
+            /*
+            ------------------------------------------------------------
+            SEGUNDO TRIMESTRE
+            ------------------------------------------------------------
+            */
+
+            if (year >= 1996 && year <= 2026) {
+
+                REPORT_CONTENT[`${year}-q2`] = `
+            <h3>Second Quarter ${year}</h3>
+
+            <ul>
+                <li>
+                    <a href="https://berkshirehathaway.com/qtrly/2ndqtr${shortYear}.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        ${year} Second Quarter Report (PDF file)
+                    </a>
+                </li>
+            </ul>
+        `;
+
+            }
+
+            /*
+            ------------------------------------------------------------
+            TERCER TRIMESTRE
+            ------------------------------------------------------------
+            */
+
+            if (year >= 1996 && year <= 2025) {
+
+                REPORT_CONTENT[`${year}-q3`] = `
+            <h3>Third Quarter ${year}</h3>
+
+            <ul>
+                <li>
+                    <a href="https://berkshirehathaway.com/qtrly/3rdqtr${shortYear}.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        ${year} Third Quarter Report (PDF file)
+                    </a>
+                </li>
+            </ul>
+        `;
+
+            }
+
+            /*
+            ------------------------------------------------------------
+            INFORME ANUAL
+            ------------------------------------------------------------
+            */
+
+            if (year >= 1995 && year <= 2025) {
+
+                REPORT_CONTENT[`${year}-annual`] = `
+            <h3>Annual Report ${year}</h3>
+
+            <ul>
+                <li>
+                    <a href="https://berkshirehathaway.com/${year}ar/${year}ar.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        ${year} Annual Report (PDF file)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://berkshirehathaway.com/${year}ar/${year}10-k.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        ${year} SEC Form 10-K (PDF file)
+                    </a>
+                </li>
+            </ul>
+        `;
+
+            }
+
+        }
+
+
+        /*
+        ============================================================
+        GENERACIÓN DE LOS BOTONES DE TODOS LOS AÑOS
+        ============================================================
+        */
+
+        const reportsGrid = document.getElementById("reports-grid");
+
+        const reportTypes = [
+            { id: "q1", label: "1st Quarter" },
+            { id: "q2", label: "2nd Quarter" },
+            { id: "q3", label: "3rd Quarter" },
+            { id: "annual", label: "Annual Report" }
+        ];
+
+        for (let year = 2026; year >= 1995; year--) {
+
+            const card = document.createElement("div");
+            card.className = "report-year-card";
+
+            const header = document.createElement("div");
+            header.className = "year-header";
+
+            const heading = document.createElement("h3");
+            heading.textContent = year;
+
+            header.appendChild(heading);
+
+            if (year === 2026) {
+                const badge = document.createElement("span");
+                badge.className = "year-badge current";
+                badge.textContent = "Current Year";
+                header.appendChild(badge);
+            }
+
+            if (year === 1995) {
+                const badge = document.createElement("span");
+                badge.className = "year-badge current";
+                badge.textContent = "Partial Data";
+                badge.style.backgroundColor = "rgba(239, 68, 68, 0.15)";
+                badge.style.color = "#f87171";
+                header.appendChild(badge);
+            }
+
+            const links = document.createElement("div");
+            links.className = "quarter-links";
+
+            reportTypes.forEach(function (report) {
+
+                // En 1995 solo se muestra Annual Report.
+                if (year === 1995 && report.id !== "annual") {
+                    const unavailable = document.createElement("span");
+                    unavailable.className = "quarter-btn disabled";
+                    unavailable.textContent = "N/A";
+                    links.appendChild(unavailable);
+                    return;
+                }
+
+                // En 2026 todavía no se muestran el tercer trimestre
+                // ni el informe anual.
+                if (year === 2026 &&
+                    (report.id === "q3" || report.id === "annual")) {
+
+                    const unavailable = document.createElement("span");
+                    unavailable.className = "quarter-btn disabled";
+                    unavailable.textContent = "N/A";
+                    links.appendChild(unavailable);
+                    return;
+                }
+
+                const button = document.createElement("button");
+
+                button.type = "button";
+                button.className = "year-pill report-modal-trigger";
+                button.textContent = report.label;
+
+                button.dataset.year = year;
+                button.dataset.report = report.id;
+
+                button.dataset.content = year + "-" + report.id;
+
+                button.dataset.title =
+                    year + " - " + report.label;
+
+                links.appendChild(button);
+            });
+
+            card.appendChild(header);
+            card.appendChild(links);
+
+            reportsGrid.appendChild(card);
+        }
+
+
+        /*
+        ============================================================
+        FUNCIONAMIENTO DE LA VENTANA MODAL
+        ============================================================
+        */
+
+        const overlay = document.getElementById("report-modal-overlay");
+        const closeButton = document.getElementById("report-modal-close");
+        const modalTitle = document.getElementById("report-modal-title");
+        const modalBody = document.getElementById("report-modal-body");
+
+        let previousButton = null;
+
+
+        function openModal(button) {
+
+            const contentId = button.dataset.content;
+
+            modalTitle.textContent = button.dataset.title;
+
+            /*
+            Si existe contenido personalizado para este botón,
+            se muestra ese contenido.
+
+            Si todavía no has agregado contenido, se muestra
+            un mensaje provisional.
+            */
+
+            if (Object.prototype.hasOwnProperty.call(REPORT_CONTENT, contentId)) {
+
+                modalBody.innerHTML = REPORT_CONTENT[contentId];
+
+            } else {
+
+                modalBody.innerHTML = `
+                    <p>
+                        Todavía no has agregado contenido para este reporte.
+                    </p>
+                    <p>
+                        Busca <strong>${contentId}</strong> en el objeto
+                        REPORT_CONTENT y agrega aquí sus enlaces.
+                    </p>
+                `;
+
+            }
+
+            previousButton = button;
+
+            overlay.hidden = false;
+            document.body.style.overflow = "hidden";
+
+            closeButton.focus();
+        }
+
+
+        function closeModal() {
+
+            overlay.hidden = true;
+            document.body.style.overflow = "";
+
+            if (previousButton) {
+                previousButton.focus();
+            }
+        }
+
+
+        // Abrir la ventana al pulsar cualquier botón.
+        document.querySelectorAll(".report-modal-trigger").forEach(function (button) {
+
+            button.addEventListener("click", function () {
+                openModal(button);
+            });
+
+        });
+
+
+        // Cerrar con la X.
+        closeButton.addEventListener("click", closeModal);
+
+
+        // Cerrar al pulsar fuera del cuadro.
+        overlay.addEventListener("click", function (event) {
+
+            if (event.target === overlay) {
+                closeModal();
+            }
+
+        });
+
+
+        // Cerrar al pulsar Escape.
+        document.addEventListener("keydown", function (event) {
+
+            if (event.key === "Escape" && !overlay.hidden) {
+                closeModal();
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
