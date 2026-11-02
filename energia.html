@@ -16,7 +16,7 @@
     <!-- Hoja de Estilos Externa -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Estilo específico para garantizar la forma de cápsula/pills -->
+    <!-- Estilo específico para las cápsulas de años -->
     <style>
         .year-pill {
             display: inline-flex;
@@ -26,7 +26,6 @@
             background-color: #2b394e;
             color: #ffffff;
             border-radius: 9999px;
-            /* Da la forma totalmente redondeada tipo pill */
             text-decoration: none;
             font-family: 'Inter', sans-serif;
             font-size: 0.95rem;
@@ -42,7 +41,6 @@
 
         .year-pill.active {
             background-color: #3b82f6;
-            /* Azul destacado para el año activo */
             color: #ffffff;
             font-weight: 600;
         }
@@ -56,6 +54,7 @@
         <!-- Encabezado Principal -->
         <header class="header">
             <div class="header-container">
+
                 <div class="brand">
                     <h1>BERKSHIRE HATHAWAY INC.</h1>
                     <p class="location">3555 Farnam Street • Omaha, NE 68131</p>
@@ -64,125 +63,182 @@
                 <div class="header-nav">
                     <a href="index.html" class="nav-back">← Back to Main Page</a>
                 </div>
+
             </div>
         </header>
 
         <!-- Contenedor Principal -->
         <main class="main-container" style="max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem;">
 
-            <!-- Encabezado de la Sección Centrado -->
+            <!-- Encabezado de la Sección -->
             <div class="news-header" style="text-align: center; margin-bottom: 3rem;">
+
                 <div class="section-title-group">
-                    <h2 style="font-size: 2.25rem; margin-bottom: 0.75rem;">Berkshire Hathaway Energy Investor
-                        Presentations</h2>
+                    <h2 style="font-size: 2.25rem; margin-bottom: 0.75rem;">
+                        Berkshire Hathaway Energy Investor Presentations
+                    </h2>
+
                     <p style="max-width: 680px; margin: 0 auto; opacity: 0.85; line-height: 1.6;">
                         Annual investor presentations detailing financial performance, energy portfolio updates, and
                         strategic infrastructure projects for Berkshire Hathaway Energy.
                     </p>
                 </div>
+
             </div>
 
-            <!-- Rejilla de Cuadros (Tarjetas Estilo Index) -->
+            <!-- Rejilla de Presentaciones -->
             <section class="main-grid" style="display: grid; gap: 2rem;">
 
-
-
-                <!-- Rejilla de Presentaciones Individuales -->
                 <div class="presentations-list"
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
 
                     <!-- 2026 Presentation -->
                     <article class="card"
                         style="background: rgba(30, 41, 59); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                        <div class="card-content">
 
+                        <div class="card-content">
                             <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700;">
-                                2026 Investor Presentation</h3>
+                                2026 Investor Presentation
+                            </h3>
+
                             <p class="card-description" style="line-height: 1.5; opacity: 0.85; font-size: 0.9rem;">
                                 Comprehensive overview of BHE's financial results, capital deployment, and renewable
                                 energy progress for 2026.
                             </p>
                         </div>
+
                         <div class="card-action"
                             style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1rem;">
-                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">PDF Document</span>
-                            <a href="bhe/2026bhe.pdf" class="nav-back" target="_blank">View Presentation →</a>
+
+                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">
+                                PDF Document
+                            </span>
+
+                            <a href="https://berkshirehathaway.com/bhenergy/BHE2026InvestPresent.pdf" class="nav-back"
+                                target="_blank" rel="noopener noreferrer">
+                                View Presentation →
+                            </a>
                         </div>
+
                     </article>
 
                     <!-- 2025 Presentation -->
                     <article class="card"
                         style="background: rgba(30, 41, 59); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                        <div class="card-content">
 
+                        <div class="card-content">
                             <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700;">
-                                2025 Investor Presentation</h3>
+                                2025 Investor Presentation
+                            </h3>
+
                             <p class="card-description" style="line-height: 1.5; opacity: 0.85; font-size: 0.9rem;">
                                 Operational performance updates, regulated utility operations, and energy transmission
                                 infrastructure strategy.
                             </p>
                         </div>
+
                         <div class="card-action"
                             style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1rem;">
-                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">PDF Document</span>
-                            <a href="bhe/2025bhe.pdf" class="nav-back" target="_blank">View Presentation →</a>
+
+                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">
+                                PDF Document
+                            </span>
+
+                            <a href="https://berkshirehathaway.com/bhenergy/BHE2025InvestPresent.pdf" class="nav-back"
+                                target="_blank" rel="noopener noreferrer">
+                                View Presentation →
+                            </a>
                         </div>
+
                     </article>
 
                     <!-- 2024 Presentation -->
                     <article class="card"
                         style="background: rgba(30, 41, 59); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                        <div class="card-content">
 
+                        <div class="card-content">
                             <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700;">
-                                2024 Investor Presentation</h3>
+                                2024 Investor Presentation
+                            </h3>
+
                             <p class="card-description" style="line-height: 1.5; opacity: 0.85; font-size: 0.9rem;">
                                 Financial highlights, energy transition goals, and credit rating metrics for Berkshire
                                 Hathaway Energy.
                             </p>
                         </div>
+
                         <div class="card-action"
                             style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1rem;">
-                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">PDF Document</span>
-                            <a href="bhe/2024bhe.pdf" class="nav-back" target="_blank">View Presentation →</a>
+
+                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">
+                                PDF Document
+                            </span>
+
+                            <a href="https://berkshirehathaway.com/bhenergy/BHE2024InvestPresent.pdf" class="nav-back"
+                                target="_blank" rel="noopener noreferrer">
+                                View Presentation →
+                            </a>
                         </div>
+
                     </article>
 
                     <!-- 2023 Presentation -->
                     <article class="card"
                         style="background: rgba(30, 41, 59); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                        <div class="card-content">
 
+                        <div class="card-content">
                             <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700;">
-                                2023 Investor Presentation</h3>
+                                2023 Investor Presentation
+                            </h3>
+
                             <p class="card-description" style="line-height: 1.5; opacity: 0.85; font-size: 0.9rem;">
                                 Historical analysis of business segment earnings, asset foundation, and long-term
                                 capital investments.
                             </p>
                         </div>
+
                         <div class="card-action"
                             style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1rem;">
-                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">PDF Document</span>
-                            <a href="bhe/2023bhe.pdf" class="nav-back" target="_blank">View Presentation →</a>
+
+                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">
+                                PDF Document
+                            </span>
+
+                            <a href="https://berkshirehathaway.com/bhenergy/BHE2023InvestPresent.pdf" class="nav-back"
+                                target="_blank" rel="noopener noreferrer">
+                                View Presentation →
+                            </a>
                         </div>
+
                     </article>
 
                     <!-- 2022 Presentation -->
                     <article class="card"
                         style="background: rgba(30, 41, 59); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                        <div class="card-content">
 
+                        <div class="card-content">
                             <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700;">
-                                2022 Investor Presentation</h3>
+                                2022 Investor Presentation
+                            </h3>
+
                             <p class="card-description" style="line-height: 1.5; opacity: 0.85; font-size: 0.9rem;">
-                                Overview of BHE energy business platform, customer growth, and pipeline operations.
+                                Overview of BHE's energy business platform, customer growth, and pipeline operations.
                             </p>
                         </div>
+
                         <div class="card-action"
                             style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1rem;">
-                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">PDF Document</span>
-                            <a href="bhe/2022bhe.pdf" class="nav-back" target="_blank">View Presentation →</a>
+
+                            <span class="file-type" style="font-size: 0.85rem; opacity: 0.6;">
+                                PDF Document
+                            </span>
+
+                            <a href="https://berkshirehathaway.com/bhenergy/BHE2022InvestPresent.pdf" class="nav-back"
+                                target="_blank" rel="noopener noreferrer">
+                                View Presentation →
+                            </a>
                         </div>
+
                     </article>
 
                 </div>
@@ -195,9 +251,11 @@
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-note">
-                    <p>If you have any comments about our WEB page, you can write us at the address shown above.
+                    <p>
+                        If you have any comments about our WEB page, you can write us at the address shown above.
                         However, due to the limited number of personnel in our corporate office, we are unable to
-                        provide a direct response.</p>
+                        provide a direct response.
+                    </p>
                 </div>
             </div>
         </footer>
