@@ -15,6 +15,24 @@
 
     <!-- Hoja de Estilos Externa -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Estilos Adicionales para Estado de Búsqueda Sin Resultados -->
+    <style>
+        .no-results-message {
+            display: none;
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 8px;
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            margin: 2rem 0;
+            color: #94a3b8;
+        }
+
+        .category-card.hidden {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,7 +62,8 @@
             <section class="alerts-section">
 
                 <!-- Alerta de Fraude -->
-                <a href="fraude.html" class="alert-card warning">
+                <a href="fraude.html" class="alert-card warning"
+                    data-search="fraudulent claims notice warning statement buffett endorsement investment political candidates">
                     <div class="alert-header">
                         <div class="alert-title-group">
                             ⚠️ <h3>Fraudulent Claims Notice</h3>
@@ -57,7 +76,8 @@
                 </a>
 
                 <!-- Mensaje de Buffett -->
-                <a href="mensaje.html" class="alert-card info">
+                <a href="mensaje.html" class="alert-card info"
+                    data-search="message warren buffett investor relations core principles communication">
                     <div class="alert-header">
                         <div class="alert-title-group">
                             ✉️ <h3>A Message from Warren E. Buffett</h3>
@@ -71,6 +91,12 @@
 
             </section>
 
+            <!-- Mensaje Dinámico cuando no hay coincidencias -->
+            <div id="noResults" class="no-results-message">
+                <h3>No matching documents or links found</h3>
+                <p>Try searching for terms like "reports", "annual", "buffett", "sec", or "stock".</p>
+            </div>
+
             <!-- Grilla de Tarjetas Categorizadas -->
             <div class="cards-grid">
 
@@ -83,7 +109,8 @@
                         <div class="item-count">3 links</div>
                     </div>
                     <ul class="link-list">
-                        <li class="link-item" data-search="annual interim reports financial 10-q 10-k august 2026">
+                        <li class="link-item"
+                            data-search="annual interim reports financial 10-q 10-k august 2026 pdf quarterly balance sheet">
                             <a href="reports.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Annual & Interim Reports</div>
@@ -92,9 +119,10 @@
                                 ↗
                             </a>
                         </li>
-                        <li class="link-item" data-search="sec filings edgar database direct">
+                        <li class="link-item"
+                            data-search="sec filings edgar database direct pdf 10-k 10-q 8-k governance">
                             <a href="https://www.sec.gov/cgi-bin/browse-edgar?company=berkshire+hathaway&match=&CIK=&filenum=&State=&Country=&SIC=&owner=exclude&Find=Find+Companies&action=getcompany"
-                                class="item-block">
+                                class="item-block" target="_blank" rel="noopener noreferrer">
                                 <div class="item-content">
                                     <div class="link-title">Link to SEC Filings</div>
                                     <div class="link-meta">EDGAR Database Direct</div>
@@ -102,7 +130,8 @@
                                 ↗
                             </a>
                         </li>
-                        <li class="link-item" data-search="common stock information class a class b shares">
+                        <li class="link-item"
+                            data-search="common stock information class a class b shares pricing rights comparative pdf">
                             <a href="acciones.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Common Stock Information</div>
@@ -123,7 +152,8 @@
                         <div class="item-count">4 links</div>
                     </div>
                     <ul class="link-list">
-                        <li class="link-item" data-search="warren buffett letters shareholders annual february 2025">
+                        <li class="link-item"
+                            data-search="warren buffett letters shareholders annual february 2025 pdf chairman letter">
                             <a href="cartas-buffett.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Warren Buffett's Letters to Shareholders</div>
@@ -132,7 +162,8 @@
                                 ↗
                             </a>
                         </li>
-                        <li class="link-item" data-search="greg abel letters shareholders february 2026">
+                        <li class="link-item"
+                            data-search="greg abel letters shareholders february 2026 ceo message pdf">
                             <a href="cartas-abel.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Greg Abel's Letters to Shareholders</div>
@@ -141,7 +172,8 @@
                                 ↗
                             </a>
                         </li>
-                        <li class="link-item" data-search="special letters past present future warren charlie munger">
+                        <li class="link-item"
+                            data-search="special letters past present future warren charlie munger historical pdf">
                             <a href="cartas-especiales.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Special Letters RE: Past, Present and Future</div>
@@ -150,7 +182,7 @@
                                 ↗
                             </a>
                         </li>
-                        <li class="link-item" data-search="charlie munger letters wesco shareholders archive">
+                        <li class="link-item" data-search="charlie munger letters wesco shareholders archive pdf">
                             <a href="cartas-munger.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Charlie Munger's Letters to Wesco Shareholders</div>
@@ -171,7 +203,8 @@
                         <div class="item-count">2 links</div>
                     </div>
                     <ul class="link-list">
-                        <li class="link-item" data-search="news releases berkshire warren buffett september 2026">
+                        <li class="link-item"
+                            data-search="news releases berkshire warren buffett september 2026 press statements pdf">
                             <a href="noticias.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">News Releases from Berkshire & Warren Buffett</div>
@@ -180,7 +213,8 @@
                                 ↗
                             </a>
                         </li>
-                        <li class="link-item" data-search="annual meeting information april 2026 shareholder omaha">
+                        <li class="link-item"
+                            data-search="annual meeting information april 2026 shareholder omaha clear bag policy pdf guide route proxy">
                             <a href="reunión-anual.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Annual Meeting Information</div>
@@ -201,7 +235,8 @@
                         <div class="item-count">4 links</div>
                     </div>
                     <ul class="link-list">
-                        <li class="link-item" data-search="links berkshire operating companies subsidiary directory">
+                        <li class="link-item"
+                            data-search="links berkshire operating companies subsidiary directory geico bnsf companies">
                             <a href="subsidiarias.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Links to Berkshire Operating Companies</div>
@@ -210,7 +245,8 @@
                                 ↗
                             </a>
                         </li>
-                        <li class="link-item" data-search="berkshire hathaway energy investor presentations bhe">
+                        <li class="link-item"
+                            data-search="berkshire hathaway energy investor presentations bhe energy pdf">
                             <a href="energia.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Berkshire Hathaway Energy Investor Presentations</div>
@@ -219,7 +255,8 @@
                                 ↗
                             </a>
                         </li>
-                        <li class="link-item" data-search="corporate governance policies board guidelines">
+                        <li class="link-item"
+                            data-search="corporate governance policies board guidelines ethics compliance pdf">
                             <a href="gobernanza.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Corporate Governance</div>
@@ -228,7 +265,8 @@
                                 ↗
                             </a>
                         </li>
-                        <li class="link-item" data-search="sustainability esg environmental reports">
+                        <li class="link-item"
+                            data-search="sustainability esg environmental reports climate sustainability pdf">
                             <a href="sostenibilidad.html" class="item-block">
                                 <div class="item-content">
                                     <div class="link-title">Sustainability</div>
@@ -268,6 +306,67 @@
         </footer>
 
     </div>
+
+    <!-- Script de Filtro Funcional para el Buscador -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('searchInput');
+            const linkItems = document.querySelectorAll('.link-item');
+            const alertCards = document.querySelectorAll('.alert-card');
+            const categoryCards = document.querySelectorAll('.category-card');
+            const noResultsMessage = document.getElementById('noResults');
+
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                let matchesFound = 0;
+
+                // 1. Filtrar las Alertas Prioritarias
+                alertCards.forEach(alert => {
+                    const textContent = alert.textContent.toLowerCase();
+                    const searchAttr = alert.getAttribute('data-search') || '';
+                    if (textContent.includes(query) || searchAttr.includes(query)) {
+                        alert.style.display = 'block';
+                        matchesFound++;
+                    } else {
+                        alert.style.display = 'none';
+                    }
+                });
+
+                // 2. Filtrar los Enlaces de las Categorías
+                categoryCards.forEach(card => {
+                    const items = card.querySelectorAll('.link-item');
+                    let visibleItemsInCard = 0;
+
+                    items.forEach(item => {
+                        const textContent = item.textContent.toLowerCase();
+                        const searchAttr = item.getAttribute('data-search') || '';
+
+                        if (textContent.includes(query) || searchAttr.includes(query)) {
+                            item.style.display = 'block';
+                            visibleItemsInCard++;
+                            matchesFound++;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    // Si una categoría no tiene elementos visibles en la búsqueda actual, se oculta el cuadro entero
+                    if (visibleItemsInCard > 0 || query === '') {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+
+                // 3. Mostrar u ocultar mensaje de "Sin Resultados"
+                if (matchesFound === 0 && query !== '') {
+                    noResultsMessage.style.display = 'block';
+                } else {
+                    noResultsMessage.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 </body>
 
